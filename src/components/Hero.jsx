@@ -1,6 +1,6 @@
 import {HERO_CONTENT} from '../constants/index.js';
 // import profilePic from '../assets/kevinRushProfile.png';
-import profilePic from '../assets/sha2.jpg';
+import profilePic from '../assets/Sha3.jpg';
 import { delay, motion } from "framer-motion";
 
 const container = (delay) => ({
@@ -40,12 +40,12 @@ const Hero = () => {
             </div>
 
             <div className='w-full lg:w-1/2 lg:p-8'>
-                <div className='flex justify-center '>
+                <div className='flex justify-center'>
                    <motion.img 
                    initial={{x:100, opacity:0}}
                    animate={{x:0 , opacity:1}}
                    transition={{duration:1,delay:1.2}}
-                   className='object-contain h-auto w-4/5 rounded-xl'
+                   className='object-contain h-auto w-4/5 rounded-xl shadow-[0_0_200px_rgba(0,0,0,0.9)_inset] '
                    src={profilePic} alt="profilePic" /> 
                 </div>
             </div>
